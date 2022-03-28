@@ -203,7 +203,7 @@ body {
 }
 
 .information-section {
-  height: 550px;
+  height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -215,7 +215,16 @@ body {
   background-image: linear-gradient(
       to bottom,
       rgba(59, 48, 42, 0.7),
-      rgba(181, 91, 46, 0.7)
+      rgba(59, 48, 42, 0.7),
+      rgba(59, 48, 42, 0.7),
+      rgba(59, 48, 42, 0.7),
+      rgba(110, 75, 59, 0.918),
+      rgba(124, 86, 71, 0.918),
+      rgba(146, 109, 94, 0.918),
+      rgba(161, 127, 111, 0.918),
+      rgba(161, 132, 119, 0.918),
+      rgba(185, 156, 142, 0.918),
+      rgb(255, 255, 255)
     ),
     url("../img/buquet.png");
 }
