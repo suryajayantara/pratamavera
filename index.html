@@ -7,6 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pratama & Vera</title>
   <link rel="stylesheet" href="asset/css/style.css" />
+  <link rel="stylesheet" href="asset/css/animations.css" />
+  
 
   <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -21,10 +23,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+  
 
 </head>
 
@@ -39,8 +38,8 @@
       Plays
     </div>
 
-    <div class="hero-section">
-      <img id="initial_wed" src="asset/img/Group 41.png" alt="weding_initial" class="animate__animated animate__fadeInUp animate__slower animate__delay-1s" />
+    <div class="hero-section animatedParent">
+      <img id="initial_wed" src="asset/img/Group 41.png" alt="weding_initial" class="animated fadeInUpShort" />
 
       <a href="#profile_section" class="downscroll" id="downscroll"> Buka Undangan </a>
     </div>
@@ -50,26 +49,26 @@
 
 
     <!-- Profile section -->
-    <div class="profile-section" id="profile_section">
+    <div class="profile-section animatedParent" id="profile_section">
       <div class="profile-ornament">
         <img src="asset/img/sudut1.png" alt="profile-side-ornament" class="side-profile" />
-        <h1 class="animate__animated animate__fadeInUp animate__slower animate__delay-1s">Pawiwahan</h1>
+        <h1 class="animated fadeInUpShort">Pawiwahan</h1>
 
         <img src="asset/img/sudut2.png" alt="profile-side-ornament" class="side-profile" />
       </div>
       <div class="profile-greeting">
-        <p class="animate__animated animate__fadeIn animate__slower animate__delay-1s">
+        <p class="animated fadeInUpShort">
           Malarapan auntuk wahyu diatmikaning manah, titiang ngelungsur sepe
           ngerauh ida dane ngupasaksi saha mapaica pangerestu sajeroning karya
           pawiwahan pianak titiang
         </p>
       </div>
       <div class="profile-picture">
-        <img src="asset/img/wayan.png" alt="wayan" class="animate__animated animate__fadeInLeft animate__slower animate__delay-1s" />
-        <img src="asset/img/vera.png" alt="vera" class="animate__animated animate__fadeInRight animate__slower animate__delay-1s"/>
+        <img src="asset/img/wayan.png" alt="wayan" class="animated fadeInLeftShort" />
+        <img src="asset/img/vera.png" alt="vera" class="animated fadeInRightShort"/>
       </div>
       <div class="profile-name">
-        <div class="animate__animated animate__fadeIn animate__slower animate__delay-1s">
+        <div class="animated fadeInUpShort">
           <h3>I Wayan Partama Putra, S.H., M.H.</h3>
           <p>
             Putra pertama dari pasangan I Nyoman Sumaradana dan Ni Nengah
@@ -78,7 +77,7 @@
           <p class="address">Br. Bun, Dangin Puri, Denpasar Timur</p>
         </div>
         <img src="asset/img/devider_love.png" alt="devider" class="devider" />
-        <div class="animate__animated animate__fadeIn animate__slower animate__delay-1s"> <h3>Ni Kadek Pera Ariantini, S.Pd.</h3>
+        <div class="animated fadeInUpShort"> <h3>Ni Kadek Pera Ariantini, S.Pd.</h3>
           <p>
             Putri kedua dari pasangan
             I Ketut Arka, S.Pd. dan Ni Nyoman Wiriantini
@@ -91,22 +90,22 @@
     <!-- End of Profile  -->
 
     <!-- Countdown -->
-    <div class="countdown-section">
+    <div class="countdown-section animatedParent">
       <h1>Hitung Mundur Acara</h1>
       <div class="counter-container">
-        <div class="counter-box animate__animated animate__fadeIn animate__slower animate__delay-1s">
+        <div class="counter-box animated fadeInLeftShort">
           <h1 id="days">15</h1>
           <p>Hari</p>
         </div>
-        <div class="counter-box">
+        <div class="counter-box animated fadeInDownShort">
           <h1 id="hours">15</h1>
           <p>Jam</p>
         </div>
-        <div class="counter-box">
+        <div class="counter-box animated fadeInUpShort">
           <h1 id="minutes">15</h1>
           <p>Menit</p>
         </div>
-        <div class="counter-box">
+        <div class="counter-box animated fadeInRightShort">
           <h1 id="seconds">15</h1>
           <p>Detik</p>
         </div>
@@ -116,39 +115,39 @@
 
 
     <!-- Banner -->
-    <div class="information-section">
-      <h3>Acara & Lokasi</h3>
-      <p class="information-desc">Atas Anugerah dari Tuhan Yang Maha Esa kami bermaksud mengundang Bapak/Ibu/Saudara/i
+    <div class="information-section animatedParent">
+      <h3 class="animated fadeInUpShort">Acara & Lokasi</h3>
+      <p class="information-desc animated fadeInUpShort">Atas Anugerah dari Tuhan Yang Maha Esa kami bermaksud mengundang Bapak/Ibu/Saudara/i
         pada Acara</p>
-      <img src="asset/img/line.png" alt="line-sec" class="line">
-      <div class="information-timeschedule">
+      <img src="asset/img/line.png" alt="line-sec" class="line animated fadeIn">
+      <div class="information-timeschedule animated fadeInUpShort">
         <h1>Rabu, 6 april 2022</h1>
         <h2>11:00 - Selesai</h2>
         <h3>Jl. Ceroring GG. IV No. 2 Denpasar</h3>
       </div>
       <img src="asset/img/line.png" alt="line-sec" class="line">
-      <div class="information-button">
+      <div class="information-button animated fadeInUpShort">
         <button> <i class="fa-solid fa-location-dot"></i> Lihat Lokasi </button>
         <button> <i class="fa-solid fa-calendar-days"></i> Tambahkan Kalender </button>
       </div>
-      <p class="information-footer">Atas kehadiran serta doa restunya, kami sekeluarga mengucapkan terima kasih.</p>
+      <p class="information-footer animated fadeInUpShort">Atas kehadiran serta doa restunya, kami sekeluarga mengucapkan terima kasih.</p>
     </div>
     <!-- End of Banners -->
 
 
     <!-- Maps  -->
-    <div class="maps-section">
-      <h1>Lokasi</h1>
-      <p>Jl. Ceroring GG. IV No. 2 Denpasar</p>
+    <div class="maps-section animatedParent">
+      <h1 class="animated fadeInUpShort">Lokasi</h1>
+      <p class="animated fadeInUpShort">Jl. Ceroring GG. IV No. 2 Denpasar</p>
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.381136506605!2d115.2217086!3d-8.655253499999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd2409b79d33123%3A0x175cd41aad38c873!2sGg.%20IV%20No.2%2C%20Dangin%20Puri%2C%20Kec.%20Denpasar%20Tim.%2C%20Kota%20Denpasar%2C%20Bali%2080232!5e0!3m2!1sen!2sid!4v1648350706062!5m2!1sen!2sid"
-        allowfullscreen="" loading="lazy" class="maps-gmaps" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        allowfullscreen="" loading="lazy" class="maps-gmaps animated fadeInUpShort" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 
     <!-- Galeri -->
-    <div class="galery-section">
+    <div class="galery-section animatedParent">
       <h1>Galery</h1>
-      <div class="galery-video">
+      <div class="galery-video animated fadeInUpShort">
         <iframe src="https://www.youtube.com/embed/8Rwh5ozw4JI" title="Pratama Vera Wedding"
           class="galery-video-youtube" allow="accelerometer; clipboard-write; encrypted-media; gyroscope;"
           allowfullscreen></iframe>
@@ -156,18 +155,18 @@
 
       <div class="galery-photo">
 
-        <div class="card-tall animate__animated animate__fadeInLeft animate__slower animate__delay-5s" style="background-image: url('asset/img/galery/SBI08712.jpeg');"></div>
-        <div class="card-wide animate__animated animate__fadeInRight animate__slower animate__delay-5s" style="background-image: url('asset/img/galery/SBI08773.jpg');"></div>
+        <div class="card-tall animated fadeInLeftShort" style="background-image: url('asset/img/galery/SBI08712.jpeg');"></div>
+        <div class="card-wide animated fadeInRightShort" style="background-image: url('asset/img/galery/SBI08773.jpg');"></div>
 
-        <div class="card-wide animate__animated animate__fadeInLeft animate__slower animate__delay-5s" style="background-image: url('asset/img/galery/SBI08725.jpg');"></div>
-        <div class="card-tall card-wide animate__animated animate__fadeInRight animate__slower animate__delay-5s" style="background-image: url('asset/img/galery/SBI08689.jpg');"></div>
+        <div class="card-wide animated fadeInLeftShort" style="background-image: url('asset/img/galery/SBI08725.jpg');"></div>
+        <div class="card-tall animated fadeInRightShort" style="background-image: url('asset/img/galery/SBI08689.jpg');"></div>
         
 
-        <div class="card-tall animate__animated animate__fadeInLeft animate__slower animate__delay-5s" style="background-image: url('asset/img/galery/SBI08324.jpg');"></div>
-        <div class="card-wide card-wide animate__animated animate__fadeInRight animate__slower animate__delay-5s" style="background-image: url('asset/img/galery/SBI08371.jpg');"></div>
+        <div class="card-tall animated fadeInLeftShort" style="background-image: url('asset/img/galery/SBI08324.jpg');"></div>
+        <div class="card-wide animated fadeInRightShort" style="background-image: url('asset/img/galery/SBI08371.jpg');"></div>
         
-        <div class="card-wide animate__animated animate__fadeInLeft animate__slower animate__delay-5s" style="background-image: url('asset/img/galery/SBI08224.jpg');"></div>
-        <div class="card-tall card-wide animate__animated animate__fadeInRight animate__slower animate__delay-5s" style="background-image: url('asset/img/galery/SBI08243.jpg');"></div>
+        <div class="card-wide animated fadeInLeftShort" style="background-image: url('asset/img/galery/SBI08224.jpg');"></div>
+        <div class="card-tall animated fadeInRightShort" style="background-image: url('asset/img/galery/SBI08243.jpg');"></div>
 
       </div>
     </div>
@@ -175,7 +174,7 @@
 
     <!-- Form Whatsapp -->
 
-    <div class="form-section">
+    <div class="form-section animatedParent">
       <h1>Ucapan dan Doa</h1>
       <div class="form-container">
         
@@ -203,26 +202,26 @@
     <!-- End of Whatsapp -->
 
     <!-- Protocols -->
-    <div class="protocol-section">
-      <h1>Himbauan</h1>
-      <p>Kami menghimbau kepada Bapak/Ibu/Saudara/i yang berkesempatan dan berkenan hadir pada upacara pernikahan Kami,
+    <div class="protocol-section animatedParent">
+      <h1 class="animated fadeInUpShort">Himbauan</h1>
+      <p class="animated fadeInUpShort">Kami menghimbau kepada Bapak/Ibu/Saudara/i yang berkesempatan dan berkenan hadir pada upacara pernikahan Kami,
         agar senantiasa mengikuti arahan Pemerintah terkait protokol kesehatan di tengah Pandemi Covid-19 ini.</p>
       <div class="protocol-container">
-        <div class="protocol-box"><img src="asset/img/masker.png" alt=""></div>
-        <div class="protocol-box"><img src="asset/img/cuci.png" alt=""></div>
-        <div class="protocol-box"><img src="asset/img/jarak.png" alt=""></div>
+        <div class="protocol-box animated fadeInLeftShort"><img src="asset/img/masker.png" alt=""></div>
+        <div class="protocol-box animated fadeInUpShort"><img src="asset/img/cuci.png" alt=""></div>
+        <div class="protocol-box animated fadeInRightShort"><img src="asset/img/jarak.png" alt=""></div>
       </div>
-      <p>Demi kesehatan bersama, Pastikan Bapak/Ibu/Saudara/i untuk menggunakan Masker, Mencuci Tangan di area cuci
+      <p class="animated fadeInUpShort">Demi kesehatan bersama, Pastikan Bapak/Ibu/Saudara/i untuk menggunakan Masker, Mencuci Tangan di area cuci
         tangan yang telah kami sediakan, serta tetap menjaga jarak dari setiap orang yang hadir pada Upacara Pernikahan
         Kami.</p>
-      <p class="protocol-footer">Atas perhatian dan kesadaran Bapak/Ibu/Saudara/i, Kami ucapkan Terimakasih.</p>
+      <p class="protocol-footer animated fadeInUpShort">Atas perhatian dan kesadaran Bapak/Ibu/Saudara/i, Kami ucapkan Terimakasih.</p>
     </div>
     <!-- End of Protocols -->
 
 
     <!-- Greeting -->
-    <div class="greeting-section">
-      <div class="greeting">
+    <div class="greeting-section animatedParent">
+      <div class="greeting animated fadeInUpShort">
         <h2>Sampai jumpa di </h2>
         <h1>Hari Bahagia Kami</h1>
       </div>
@@ -230,9 +229,9 @@
     <!-- End of Greeting -->
 
     <!-- Meriahin Section -->
-    <div class="team-section">
-      <p>Created With ❤️ By</p>
-      <img src="asset/img/meriahin.png" alt="">
+    <div class="team-section animatedParent">
+      <p>Created With <span class="animated growIn slowest">❤️</span> By</p>
+      <img class="animated fadeInUpShort" src="asset/img/meriahin.png" alt="">
 
     </div>
     <!-- End Of Meriahin -->
@@ -244,8 +243,10 @@
 
 
   <!-- JS Script -->
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
   <script src="asset/js/countdown.js"></script>
   <script src="asset/js/cover.js"></script>
+  <script src="asset/js/css3-animate-it.js"></script>
 
 </body>
 
