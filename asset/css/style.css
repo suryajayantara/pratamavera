@@ -6,17 +6,14 @@ html {
   scroll-behavior: smooth;
   transition: 1s;
   font-family: "Poppins", sans-serif;
+  
 }
 
 body {
   font-size: 20px;
-  /* overflow: hidden; */
+  
 }
 
-.button-play{
-  background-color: #6c3b41;
-  position: fixed;
-}
 
 .wrapper {
   display: flex;
@@ -25,6 +22,29 @@ body {
   flex-direction: column;
   max-width: 481px;
   background-color: rgb(255, 255, 255);
+  overflow: hidden;
+}
+
+.button-play{
+  border: none;
+  z-index: 99;
+  display: block;
+  position: fixed;
+  background-color: #6c3b41ea;
+  color: #fff;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  right: 20px;
+  bottom: 30px;
+  transition: all .5s;
+}
+
+.button-play:hover{
+  border-radius: 25px;
+  width: 100px;
 }
 
 @media screen and (device-aspect-ratio: 2/3) {
@@ -417,8 +437,9 @@ body {
 }
 
 .form-section h1 {
-  margin: 20px 0 0 0;
+  margin: 50px 0;
   text-align: center;
+  font-size: 48px;
   color: rgb(255, 255, 255);
   font-weight: 400;
   font-family: "Great Vibes", cursive;
@@ -427,6 +448,9 @@ body {
 .form-section .form-container {
   margin: 10px  auto 40px auto;
   color: #fff;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
   background-color: #000000cc;
   border-radius: 20px;
   width: 80%;
@@ -439,7 +463,7 @@ body {
 }
 
 .form-section .form-container form {
-  margin: 30px 10px;
+  margin: 30px 10px 0 10px;
 }
 
 .form-section .form-container form input {
@@ -447,7 +471,7 @@ body {
   border-radius: 10px;
   border: none;
   width: 80%;
-  padding: 10px 0;
+  padding: 10px;
 }
 
 .form-section .form-container .radio-attandance{
@@ -469,10 +493,21 @@ body {
 
 .form-section .form-container textarea{
   width: 80%;
-  margin: 10px 20px;
+  margin: 10px 0 0 20px;
   resize: none;
   height: 50px;
   border-radius: 10px;
+  padding: 5px;
+}
+
+.form-section .form-container button {
+  margin: 20px 30px;
+  background-color: #6c3b41;
+  color: #fff;
+  border-radius: 10px;
+  border: none;
+  width: 80%;
+  padding: 10px 0;
 }
 
 .protocol-section {
@@ -727,7 +762,7 @@ body {
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 450px) {
   .card-wide {
     background-position: center;
     background-size: cover;

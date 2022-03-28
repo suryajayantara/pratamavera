@@ -29,15 +29,15 @@
 
 <body>
 
+  <audio controls autoplay hidden src="asset/audio/gambelan.mp3" id="musicPlay"></audio>
+
 
 
   <div class="wrapper">
+
+    <button onclick="musicControl()" class="button-play"> <i id="iconPlay" class="fa-solid fa-play"></i> </button>
+
     <!-- Hero Section -->
-
-    <div class="button-play">
-      Plays
-    </div>
-
     <div class="hero-section animatedParent">
       <img id="initial_wed" src="asset/img/Group 41.png" alt="weding_initial" class="animated fadeInUpShort" />
 
@@ -52,20 +52,20 @@
     <div class="profile-section animatedParent" id="profile_section">
       <div class="profile-ornament">
         <img src="asset/img/sudut1.png" alt="profile-side-ornament" class="side-profile" />
-        <h1 class="animated fadeInUpShort">Pawiwahan</h1>
+        <h1 class="animated fadeInUp">Pawiwahan</h1>
 
         <img src="asset/img/sudut2.png" alt="profile-side-ornament" class="side-profile" />
       </div>
       <div class="profile-greeting">
-        <p class="animated fadeInUpShort">
+        <p class="animated fadeInUp">
           Malarapan auntuk wahyu diatmikaning manah, titiang ngelungsur sepe
           ngerauh ida dane ngupasaksi saha mapaica pangerestu sajeroning karya
-          pawiwahan pianak titiang
+          pawiwahan titiang
         </p>
       </div>
       <div class="profile-picture">
-        <img src="asset/img/wayan.png" alt="wayan" class="animated fadeInLeftShort" />
-        <img src="asset/img/vera.png" alt="vera" class="animated fadeInRightShort"/>
+        <img src="asset/img/wayan.png" alt="wayan" class="animated fadeInLeft slowest" />
+        <img src="asset/img/vera.png" alt="vera" class="animated fadeInRight slowest"/>
       </div>
       <div class="profile-name">
         <div class="animated fadeInUpShort">
@@ -77,10 +77,10 @@
           <p class="address">Br. Bun, Dangin Puri, Denpasar Timur</p>
         </div>
         <img src="asset/img/devider_love.png" alt="devider" class="devider" />
-        <div class="animated fadeInUpShort"> <h3>Ni Kadek Pera Ariantini, S.Pd.</h3>
+        <div class="animated fadeInUp"> <h3>Ni Kadek Pera Ariantini, S.Pd.</h3>
           <p>
             Putri kedua dari pasangan
-            I Ketut Arka, S.Pd. dan Ni Nyoman Wiriantini
+            I Ketut Arka, S.Pd. dan Ni Nyoman Wiriyatini
   
           </p>
           <p class="address">Br. Kehen, Desa Kesiman Petilan, Denpasar Timur</p></div>
@@ -94,7 +94,7 @@
       <h1>Hitung Mundur Acara</h1>
       <div class="counter-container">
         <div class="counter-box animated fadeInLeftShort">
-          <h1 id="days">15</h1>
+          <h1 id="days"></h1>
           <p>Hari</p>
         </div>
         <div class="counter-box animated fadeInDownShort">
@@ -122,13 +122,13 @@
       <img src="asset/img/line.png" alt="line-sec" class="line animated fadeIn">
       <div class="information-timeschedule animated fadeInUpShort">
         <h1>Rabu, 6 april 2022</h1>
-        <h2>11:00 - Selesai</h2>
+        <h2>15:00 - Selesai</h2>
         <h3>Jl. Ceroring GG. IV No. 2 Denpasar</h3>
       </div>
       <img src="asset/img/line.png" alt="line-sec" class="line">
       <div class="information-button animated fadeInUpShort">
         <button> <i class="fa-solid fa-location-dot"></i> Lihat Lokasi </button>
-        <button> <i class="fa-solid fa-calendar-days"></i> Tambahkan Kalender </button>
+        <button onclick="addCalendar()"> <i class="fa-solid fa-calendar-days"></i> Tambahkan Kalender </button>
       </div>
       <p class="information-footer animated fadeInUpShort">Atas kehadiran serta doa restunya, kami sekeluarga mengucapkan terima kasih.</p>
     </div>
@@ -140,7 +140,7 @@
       <h1 class="animated fadeInUpShort">Lokasi</h1>
       <p class="animated fadeInUpShort">Jl. Ceroring GG. IV No. 2 Denpasar</p>
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.381136506605!2d115.2217086!3d-8.655253499999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd2409b79d33123%3A0x175cd41aad38c873!2sGg.%20IV%20No.2%2C%20Dangin%20Puri%2C%20Kec.%20Denpasar%20Tim.%2C%20Kota%20Denpasar%2C%20Bali%2080232!5e0!3m2!1sen!2sid!4v1648350706062!5m2!1sen!2sid"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d986.0952094621304!2d115.22069052918954!3d-8.65528199961129!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd2409b9d338d21%3A0xdc59d91d185c7f51!2sGg.%20IV%2C%20Dangin%20Puri%2C%20Kec.%20Denpasar%20Tim.%2C%20Kota%20Denpasar%2C%20Bali%2080232!5e0!3m2!1sid!2sid!4v1648479041524!5m2!1sid!2sid"
         allowfullscreen="" loading="lazy" class="maps-gmaps animated fadeInUpShort" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 
@@ -178,23 +178,25 @@
       <h1>Ucapan dan Doa</h1>
       <div class="form-container">
         
-        <form action="#">
+        <form action="">
           <p>Nama</p>
           <input type="text" name="name" id="name">
           <p>Kehadiran</p>
           <div class="radio-attandance">
-            <input type="radio" name="attandance" id="hadir" value="Hadir">
-            <label for="hadir"> Hadir </label>
+            <input type="radio" name="attandance" id="attandance" value="Bakal Hadir">
+            <label for="attandance"> Hadir </label>
             
-            <input type="radio" name="attandance" id="ragu" value="Ragu">
-            <label for="ragu"> Ragu - Ragu</label>
+            <input type="radio" name="attandance" id="attandance" value="Masih Ragu buat dateng">
+            <label for="attandance"> Ragu - Ragu</label>
             
-            <input type="radio" name="attandance" id="tidakHadir" value="Tidak Hadir">
-            <label for="tidakHadir"> Tidak Hadir</label>
+            <input type="radio" name="attandance" id="attandance" value="Gak Hadir">
+            <label for="attandance"> Tidak Hadir</label>
           </div>
           <p>Ucapan & Doa</p>
-          <Textarea> </Textarea>
+          <Textarea id="wish"> </Textarea>
+         
         </form>
+        <button onclick="sendMassage()"> Kirim </button>
         
       </div>
     </div>
@@ -247,6 +249,14 @@
   <script src="asset/js/countdown.js"></script>
   <script src="asset/js/cover.js"></script>
   <script src="asset/js/css3-animate-it.js"></script>
+  <script src="asset/js/send-massage.js"></script>
+  <script src="asset/js/music.js"></script>
+
+  <script>
+    function addCalendar(){
+      location.href = "https://calendar.google.com/event?action=TEMPLATE&tmeid=MzQzOXAzaHM0N2QyaGMycTNtdXVhbDVrajYgcGFydGFtYXBAbQ&tmsrc=partamap%40gmail.com";
+    }
+  </script>
 
 </body>
 

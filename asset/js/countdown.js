@@ -1,6 +1,8 @@
 // Init date
 
-var countdownDate = new Date("Mar 31, 2022 12:00:00").getTime();
+var countdownDate = new Date("Apr 06, 2022 24:00:00").getTime();
+
+console.log(new Date().getHours());
 
 var x = setInterval(() => {
   var now = new Date().getTime();
