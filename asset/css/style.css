@@ -512,7 +512,6 @@ body {
 
 .protocol-section {
   background: rgba(161, 102, 60, 1);
-  height: 600px;
   width: 100%;
   display: flex;
   flex-direction: column;

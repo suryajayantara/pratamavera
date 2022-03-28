@@ -1,6 +1,6 @@
 // Init date
 
-var countdownDate = new Date("Apr 06, 2022 24:00:00").getTime();
+var countdownDate = new Date("2022-04-06T13:00:00").getTime();
 
 console.log(new Date().getHours());
 
