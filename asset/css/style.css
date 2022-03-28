@@ -5,12 +5,17 @@
 html {
   scroll-behavior: smooth;
   transition: 1s;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
   font-size: 20px;
   /* overflow: hidden; */
+}
+
+.button-play{
+  background-color: #6c3b41;
+  position: fixed;
 }
 
 .wrapper {
@@ -52,6 +57,8 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  margin: 0;
 }
 
 .downscroll {
@@ -385,6 +392,7 @@ body {
 
 .form-section {
   width: 100%;
+  
   background-image: linear-gradient(
       to right,
       rgba(0, 0, 0, 0.658),
@@ -400,7 +408,7 @@ body {
 }
 
 .form-section h1 {
-  margin: 20px 0;
+  margin: 20px 0 0 0;
   text-align: center;
   color: rgb(255, 255, 255);
   font-weight: 400;
@@ -408,6 +416,7 @@ body {
 }
 
 .form-section .form-container {
+  margin: 10px  auto 40px auto;
   color: #fff;
   background-color: #000000cc;
   border-radius: 20px;
@@ -421,13 +430,40 @@ body {
 }
 
 .form-section .form-container form {
+  margin: 30px 10px;
 }
 
 .form-section .form-container form input {
   margin: 10px 20px;
+  border-radius: 10px;
   border: none;
   width: 80%;
   padding: 10px 0;
+}
+
+.form-section .form-container .radio-attandance{
+  display: flex;
+  font-size: 10px;
+  margin: 20px 25px;
+  justify-content: start;
+}
+
+.form-section .form-container .radio-attandance input{
+  margin: 0 !important;
+  width: 10px;
+  height: 10px;
+}
+
+.form-section .form-container .radio-attandance label{
+  font-size: 12px;
+}
+
+.form-section .form-container textarea{
+  width: 80%;
+  margin: 10px 20px;
+  resize: none;
+  height: 50px;
+  border-radius: 10px;
 }
 
 .protocol-section {
