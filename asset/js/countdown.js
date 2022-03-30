@@ -2,8 +2,6 @@
 
 var countdownDate = new Date("2022-04-06T13:00:00").getTime();
 
-console.log(new Date().getHours());
-
 var x = setInterval(() => {
   var now = new Date().getTime();
   var distance = countdownDate - now;

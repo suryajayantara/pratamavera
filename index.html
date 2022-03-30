@@ -29,7 +29,7 @@
 
 <body>
 
-  <audio controls autoplay hidden src="asset/audio/gambelan.mp3" id="musicPlay"></audio>
+  <audio controls autoplay loop hidden src="asset/audio/gambelan.mp3" id="musicPlay"></audio>
 
 
 
@@ -127,7 +127,7 @@
       </div>
       <img src="asset/img/line.png" alt="line-sec" class="line">
       <div class="information-button animated fadeInUpShort">
-        <button> <i class="fa-solid fa-location-dot"></i> Lihat Lokasi </button>
+        <a href="#mapsSection"> <button> <i class="fa-solid fa-location-dot"></i> Lihat Lokasi </button> </a>
         <button onclick="addCalendar()"> <i class="fa-solid fa-calendar-days"></i> Tambahkan Kalender </button>
       </div>
       <p class="information-footer animated fadeInUpShort">Atas kehadiran serta doa restunya, kami sekeluarga mengucapkan terima kasih.</p>
@@ -136,11 +136,11 @@
 
 
     <!-- Maps  -->
-    <div class="maps-section animatedParent">
+    <div class="maps-section animatedParent" id="mapsSection">
       <h1 class="animated fadeInUpShort">Lokasi</h1>
       <p class="animated fadeInUpShort">Jl. Ceroring GG. IV No. 2 Denpasar</p>
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d246.52382620034442!2d115.22135822683437!3d-8.655245608395148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd2409b84a5bc43%3A0x6a9edf84a35bdb4e!2sGg.%20IV%2C%20Dangin%20Puri%2C%20Kec.%20Denpasar%20Tim.%2C%20Kota%20Denpasar%2C%20Bali%2080232!5e0!3m2!1sid!2sid!4v1648531420193!5m2!1sid!2sid"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.380837844448!2d115.2212377!3d-8.655282000000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd2409b9d338d21%3A0xdc59d91d185c7f51!2sGg.%20IV%2C%20Dangin%20Puri%2C%20Kec.%20Denpasar%20Tim.%2C%20Kota%20Denpasar%2C%20Bali%2080232!5e0!3m2!1sen!2sid!4v1648608766294!5m2!1sen!2sid"
         allowfullscreen="" loading="lazy" class="maps-gmaps animated fadeInUpShort" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 
@@ -176,17 +176,12 @@
         <div class="card-tall animated fadeInRightShort" style="background-image: url('asset/img/galery/12.jpg');"></div>
         
 
-        <div class="card-tall animated fadeInLeftShort" style="background-image: url('asset/img/galery/13.jpg');"></div>
-        <div class="card-wide animated fadeInRightShort" style="background-image: url('asset/img/galery/19.jpg');"></div>
+        <div class="card-tall animated fadeInLeftShort" style="background-image: url('asset/img/galery/14.jpg');"></div>
+        <div class="card-wide animated fadeInRightShort" style="background-image: url('asset/img/galery/18.jpg');background-position: 0px -120px"></div>
         
         <div class="card-wide animated fadeInLeftShort" style="background-image: url('asset/img/galery/15.jpg');background-position: 0px -90px"></div>
-        <div class="card-tall animated fadeInRightShort" style="background-image: url('asset/img/galery/16.jpg');"></div>
-
-        <div class="card-tall animated fadeInLeftShort" style="background-image: url('asset/img/galery/14.jpg');"></div>
-        <div class="card-wide animated fadeInRightShort" style="background-image: url('asset/img/galery/20.jpg');background-position: 0px -100px"></div>
-
-        
-
+        <div class="card-tall animated fadeInRightShort" style="background-image: url('asset/img/galery/14.jpg');"></div>
+ 
       </div>
     </div>
     <!-- End of Galery  -->
@@ -273,7 +268,7 @@
 
   <script>
     function addCalendar(){
-      location.href = "https://calendar.google.com/event?action=TEMPLATE&tmeid=MzQzOXAzaHM0N2QyaGMycTNtdXVhbDVrajYgcGFydGFtYXBAbQ&tmsrc=partamap%40gmail.com";
+      location.href = "https://calendar.google.com/event?action=TEMPLATE&tmeid=MzQzOXAzaHM0N2QyaGMycTNtdXVhbDVrajYgdXZnYjJiZW9yc2xuZWY3Nmd1MnZxMDQxcWtAZw&tmsrc=uvgb2beorslnef76gu2vq041qk%40group.calendar.google.com";
     }
   </script>
 
