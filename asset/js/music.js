@@ -1,7 +1,4 @@
 var musicEmbed = document.querySelector("#musicPlay");
-musicEmbed.play();
-
-console.log(musicEmbed.muted);
 
 var musicControl = () => {
   var music = document.querySelector("#musicPlay");
@@ -15,7 +12,3 @@ var musicControl = () => {
     iconPlay.classList.replace("fa-play", "fa-pause");
   }
 };
-
-
-
-
