@@ -1,21 +1,7 @@
 var musicEmbed = document.querySelector("#musicPlay");
 musicEmbed.play();
 
-if (musicEmbed !== undefined) {
-  musicEmbed
-    .then(() => {
-      // Start whatever you need to do only after playback
-      // has begun.
-    })
-    .catch((error) => {
-      if (error.name === "NotAllowedError") {
-        showPlayButton(musicEmbed);
-      } else {
-        // Handle a load or playback error
-      }
-    });
-}
-
+console.log(musicEmbed.muted);
 
 var musicControl = () => {
   var music = document.querySelector("#musicPlay");
@@ -29,3 +15,7 @@ var musicControl = () => {
     iconPlay.classList.replace("fa-play", "fa-pause");
   }
 };
+
+
+
+
