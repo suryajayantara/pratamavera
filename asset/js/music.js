@@ -1,5 +1,6 @@
 var musicEmbed = document.querySelector("#musicPlay");
-musicEmbed.volume = 0.3;
+musicEmbed.play();
+
 
 var musicControl = () => {
   var music = document.querySelector("#musicPlay");
